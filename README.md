@@ -35,8 +35,3 @@ It includes a **Spring Boot backend** and a **frontend (Angular/React)** to mana
 
 ---
 
-## Setup Instructions
-### Backend
-```bash
-cd backend
-mvn spring-boot:run
