@@ -1,12 +1,12 @@
 # Enviro365Assessment - Dick Khosa
 
-## 📌 Project Overview
+## Project Overview
 This repository contains my submission for the **Junior Full-Stack Developer Assessment (Enviro365 Investments, 2026)**.  
 It includes a **Spring Boot backend** and a **frontend (Angular/React)** to manage investor portfolios, withdrawals, and CSV reports.
 
 ---
 
-## ⚙️ Backend (Spring Boot)
+## Backend (Spring Boot)
 - Retrieve investor portfolio (details + products)
 - Create withdrawal notices with balance calculations
 - Export CSV statements with filtering
@@ -17,7 +17,7 @@ It includes a **Spring Boot backend** and a **frontend (Angular/React)** to mana
 
 ---
 
-## 🎨 Frontend
+## Frontend
 - Portfolio dashboard
 - Withdrawal form
 - Withdrawal history table
@@ -26,7 +26,7 @@ It includes a **Spring Boot backend** and a **frontend (Angular/React)** to mana
 
 ---
 
-## 🛠 Advanced Features
+## Advanced Features
 - Global exception handling
 - DTO layer
 - Input validation
@@ -35,7 +35,7 @@ It includes a **Spring Boot backend** and a **frontend (Angular/React)** to mana
 
 ---
 
-## 🚀 Setup Instructions
+## Setup Instructions
 ### Backend
 ```bash
 cd backend
