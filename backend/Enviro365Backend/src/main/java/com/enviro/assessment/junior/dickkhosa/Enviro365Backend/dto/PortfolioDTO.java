@@ -1,0 +1,17 @@
+package com.enviro.assessment.junior.dickkhosa.Enviro365Backend.dto;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.util.List;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class PortfolioDTO {
+    private Long id;
+    private String name;
+    private Double balance;
+    private List<ProductDTO> products;
+}

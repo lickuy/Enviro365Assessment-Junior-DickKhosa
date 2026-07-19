@@ -1,0 +1,150 @@
+/**
+ * Portfolio Dashboard Component Styles
+ * 
+ * Styling for the investor portfolio display including:
+ * - Investor information card with eligibility status
+ * - Portfolio cards with breakdown
+ * - Product listings within portfolios
+ */
+
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+
+.portfolio-dashboard {
+  margin-bottom: 2rem;
+}
+
+.portfolio-dashboard h2 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+
+/* ============================================
+   INVESTOR INFORMATION CARD
+   ============================================
+   
+   Displays investor summary:
+   - Name
+   - Email
+   - Age
+   - Total Balance
+   - Retirement Eligibility Status
+*/
+
+.investor-info {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.investor-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.investor-info p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+/* Retirement eligibility status indicators */
+.investor-info .eligible {
+  color: #4ade80;  /* Green for eligible */
+  font-weight: bold;
+}
+
+.investor-info .not-eligible {
+  color: #f87171;  /* Red for not eligible */
+  font-weight: bold;
+}
+/* ============================================
+   PORTFOLIOS GRID CONTAINER
+   ============================================
+   
+   Displays multiple portfolios in a responsive grid
+   - Auto-fit columns (min 300px width)
+   - Responsive on smaller screens
+*/
+
+.portfolios-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ============================================
+   PORTFOLIO CARDS
+   ============================================
+   
+   Individual portfolio card with:
+   - Portfolio name and balance
+   - List of products within portfolio
+   - Hover effect for interactivity
+*/
+
+.portfolio-card {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #f9fafb;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect for better UX */
+.portfolio-card:hover {
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+}
+
+.portfolio-card h4 {
+  color: #667eea;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.portfolio-card p {
+  margin: 0.5rem 0;
+  font-size: 0.95rem;
+}
+
+/* ============================================
+   PRODUCTS SECTION
+   ============================================
+   
+   Lists all products/holdings within a portfolio
+   Shows: name, type, value, unit price
+*/
+
+.portfolio-card .products {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.portfolio-card .products h5 {
+  color: #764ba2;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.portfolio-card .products ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual product items */
+.portfolio-card .products li {
+  background-color: white;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border-radius: 4px;
+  border-left: 3px solid #667eea;  /* Left border for visual hierarchy */
+  font-size: 0.9rem;
+}
+
+.portfolio-card .products strong {
+  color: #333;
+}

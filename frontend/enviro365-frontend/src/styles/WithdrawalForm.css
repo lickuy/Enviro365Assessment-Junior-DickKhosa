@@ -1,0 +1,146 @@
+/**
+ * Withdrawal Form Component Styles
+ * 
+ * Styling for the withdrawal submission form including:
+ * - Form layout and input fields
+ * - Validation and error messages
+ * - Success/error feedback
+ * - Button states (normal, hover, disabled)
+ */
+
+/* ============================================
+   FORM CONTAINER
+   ============================================ */
+
+.withdrawal-form {
+  margin: 2rem 0;
+}
+
+.withdrawal-form h3 {
+  color: #667eea;
+  margin-bottom: 1.5rem;
+  font-size: 1.4rem;
+}
+
+/* ============================================
+   FORM LAYOUT
+   ============================================
+   
+   Vertical layout for form controls
+*/
+
+.withdrawal-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* ============================================
+   FORM GROUP (INPUTS)
+   ============================================
+   
+   Container for each form field (label + input + error)
+*/
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+/* Input and select styling */
+.form-group input,
+.form-group select {
+  padding: 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Focus state for better UX */
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Helper text below input (max balance hint) */
+.form-group small {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* ============================================
+   VALIDATION ERROR MESSAGES
+   ============================================
+   
+   Red error text shown when field validation fails
+*/
+
+.form-group .error {
+  color: #c33;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
+}
+
+/* ============================================
+   SUBMIT BUTTON
+   ============================================
+   
+   Primary action button for form submission
+*/
+
+button[type="submit"] {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover state for button */
+button[type="submit"]:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+/* Disabled state (during submission) */
+button[type="submit"]:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ============================================
+   FEEDBACK MESSAGES
+   ============================================ */
+
+/* Success message shown after successful withdrawal */
+.success-message {
+  background-color: #d1fae5;
+  border-left: 4px solid #10b981;
+  color: #065f46;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Error message shown when backend rejects withdrawal */
+.error-message {
+  background-color: #fee2e2;
+  border-left: 4px solid #dc2626;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
